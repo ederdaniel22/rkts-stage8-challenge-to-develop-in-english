@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  background-color: #fff;
+}
+.container {
+  border: 1px solid red;
+  max-width: 120rem;
+  max-height: 70rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "sidenav item-1 item-3 item-5"
+    "sidenav item-2 item-3 item-6"
+    "sidenav item-2 item-4 item-6"
+    "sidenav footer footer footer";
+}
+img {
+  max-width: 22rem;
+  min-width: 21rem;
+  border-radius: 20px;
+ 
+}
+
+.item-1 {
+  max-width: 22rem;
+  min-width: 22rem;
+  margin-top: 6.4rem;
+  position: relative;
+  grid-area: "item-1";
+  grid-row: item-1;
+  object-fit: cover;
+  animation: downtop 700ms 350ms backwards;
+  -webkit-animation: downtop 700ms 350ms backwards;
+}
+.item-1 img {
+  position: relative;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.item-1 span {
+  position: absolute;
+  left: 3rem;
+  bottom: 12rem;
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.item-1 img:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.item-2 {
+  max-width: 22rem;
+  min-width: 22rem;
+  position: relative;
+  grid-area: "item-3";
+  grid-row: item-3;
+  animation: downtop 700ms 350ms backwards;
+  -webkit-animation: downtop 700ms 350ms backwards;
+}
+.item-2 img {
+  margin-top: 6.4rem;
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.item-2 img:hover{
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.item-2 span {
+  position: absolute;
+  left: 3rem;
+  bottom: 30rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.item-3 {
+  max-width: 22rem;
+  min-width: 22rem;
+  position: relative;
+  grid-area: "item-5";
+  grid-row: item-5;
+  animation: downtop 700ms 350ms backwards;
+  -webkit-animation: downtop 700ms 350ms backwards;
+}
+.item-3 img {
+  margin-top: 6.4rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.item-3 img:hover{
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.item-3 span {
+  position: absolute;
+  left: 3rem;
+  bottom: 12rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.item-4 {
+  max-width: 22rem;
+  min-width: 22rem;
+  position: relative;
+  grid-area: "item-2";
+  grid-row: item-2;
+  animation: downtop 700ms 350ms backwards;
+  -webkit-animation: downtop 700ms 350ms backwards;
+}
+.item-4 img {
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.item-4 img:hover{
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.item-4 span {
+  position: absolute;
+  left: 3rem;
+  bottom: 26rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.item-5 {
+  max-width: 22rem;
+  min-width: 22rem;
+  position: relative;
+  grid-area: "item-4";
+  grid-row: item-4;
+  animation: downtop 700ms 350ms backwards;
+  -webkit-animation: downtop 700ms 350ms backwards;
+}
+.item-5 img {
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+}
+.item-5 img:hover{
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.item-5 span {
+  position: absolute;
+  left: 3rem;
+  bottom: 13rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.item-6 {
+  max-width: 22rem;
+  min-width: 22rem;
+  position: relative;
+  grid-area: "item-6";
+  grid-row: item-6;
+  animation: downtop 700ms 350ms backwards;
+  -webkit-animation: downtop 700ms 350ms backwards;
+}
+.item-6 img {
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.item-6 img:hover{
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.item-6 span {
+  position: absolute;
+  left: 0.8rem;
+  bottom: 5.7rem;
+  color: #000;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.sidenav {
+  max-width: 37.7rem;
+  min-width: 28.7rem;
+  margin-right: 5rem;
+  grid-area: "sidenav";
+  grid-row: sidenav;
+  text-align: center;
+  justify-content: center;
+  height: 70rem;
+  background-color: #8e9aaf;
+}
+.sidenav img {
+  margin-top: 3.2rem;
+  width: 21.5rem;
+  height: 16.7rem;
+}
+.sidenav h1 {
+  display: flex;
+  font-family: "Staatliches", sans-serif;
+  font-style: normal;
+  font-size: 4.8rem;
+  line-height: 3.4rem;
+  background-color: #cbc0d3;
+  color: #fff;
+  text-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+  height: 7rem;
+  text-transform: uppercase;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0 8rem 0;
+}
+.sidenav p {
+  display: flex;
+  margin: 0 auto;
+  width: 27.5rem;
+  height: 26.2rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  align-items: center;
+  text-align: justify;
+  color: #0000ff;
+  margin-bottom: 12.5rem;
+}
+.footer {
+  width: auto;
+  height: 2.8rem;
+  grid-area: "footer";
+  grid-column: footer;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 4.6rem;
+}
+.footer p {
+  font-family: "Open Sans", sans-serif;
+  color: #4a4e69;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  align-items: center;
+}
+.footer p span {
+  font-weight: 700;
+  line-height: 2.8rem;
+}
